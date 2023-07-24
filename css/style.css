@@ -206,6 +206,7 @@ select:-webkit-autofill:focus {
 /* SITE HEADER */
 .site-header {
     background-color: #fff;
+    z-index: 10;
 }
 
 .site-header__container {
@@ -221,6 +222,44 @@ select:-webkit-autofill:focus {
 }
 
 
+/* HERO */
+.hero {
+    position: relative;
+    background-image: url(/img/hero-bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 593px) -261px;
+}
+
+.hero__content {
+    width: 450px;
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 56px;
+    font-weight: 100;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: var(--dark-blue);
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.hero__img {
+    position: absolute;
+    width: 729px;
+    height: 900px;
+    top: -122px;
+    left: calc(50% + 122px);
+}
 
 
 /* RETINA */
