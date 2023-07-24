@@ -159,12 +159,12 @@ select:-webkit-autofill:focus {
 }
 
 .logo {
-    display: block;
+    display: inline-block;
     text-decoration: none;
 }
 
 .logo__img {
-    display: flex;
+    display: block;
     width: 139px;
     height: 20px;
     object-fit: contain;
@@ -278,6 +278,33 @@ select:-webkit-autofill:focus {
     font-size: 13px;
     line-height: 18px;
     letter-spacing: -0.2px;
+}
+
+
+/* SOCIALS */
+.socials {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.socials__item:not(:last-child) {
+    margin-right: 13px;
+}
+
+.socials__link {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+
+.socials__link:hover {
+    color: var(--green);
+}
+
+.socials__link:active {
+    opacity: 0.6;
 }
 
 
@@ -441,6 +468,87 @@ select:-webkit-autofill:focus {
     color: var(--dark-blue);
 }
 
+
+/* FOOTER */
+.site-footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    color: #fff;
+    background-color: var(--dark-blue);
+}
+
+.site-footer__container {
+    display: flex;
+}
+
+.site-footer__logo-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 130px;
+    width: 100%;
+    max-width: 160px;
+}
+
+.site-footer__logo {
+    margin-bottom: 24px;
+}
+
+.site-footer__links-wrapper {
+    display: flex;
+    margin-right: auto;
+}
+
+.site-footer__links {
+    width: 160px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-footer__links-item {
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.site-footer__links-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.site-footer__links-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer__links-link:hover {
+    color: var(--green);
+}
+
+.site-footer__links-link:active {
+    opacity: 0.6;
+}
+
+.site-footer__cta-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.site-footer__button {
+    margin-bottom: 24px;
+}
+
+.site-footer__copy {
+    margin: 0;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.5);
+}
 
 
 /* RETINA */
